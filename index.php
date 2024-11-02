@@ -163,7 +163,7 @@
         $movieImdbId = $movieData["imdbid"];
 
         // the movie db data based on bechdeltest IMDB id 
-        $apiKey = "4d8efa0162491df59b2537e4a3092a08";
+        $apiKey = "I NEARLY PUSHED THIS";
         $apiUrl = "https://api.themoviedb.org/3/find/tt$movieImdbId?api_key=$apiKey&external_source=imdb_id";
         $response = file_get_contents($apiUrl);
         $movieDataTmdb = json_decode($response, true)["movie_results"][0];
